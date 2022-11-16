@@ -65,7 +65,11 @@ void free_info(info_t *info, int all)
 		if (info->alias)
 			free_list(&(info->alias));
 		ffree(info->environ);
+<<<<<<< HEAD
 		        info->environ = NULL;
+=======
+			info->environ = NULL;
+>>>>>>> e1d3965641ff5ac26d83d7daaa1f5446a3bc7a8d
 		bfree((void **)info->cmd_buf);
 		if (info->readfd > 2)
 			close(info->readfd);
